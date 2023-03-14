@@ -13,7 +13,10 @@ html.h-100
       .row.h-100
         .d-flex.flex-column.col-xxl-4.col-xl-5.col-lg-6.col-12.h-100.px-0
           include includes/header.pug
-          .h-100.hide-scrollbar
+          .h-100.overflow-hidden.tab-content(id="tabContent")
             include includes/contacts.pug
+            include includes/chats.pug
+            include includes/profile.pug
         .col.h-100.px-0.d-flex.justify-content-center.align-items-center
           include includes/greetings.pug
+  script(src="../node_modules/bootstrap/dist/js/bootstrap.min.js")

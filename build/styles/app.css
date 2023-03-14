@@ -11808,3 +11808,50 @@ textarea.form-control-lg {
   height: 200px;
   border-radius: 100px;
 }
+
+.chat {
+  display: flex;
+  gap: 1.5rem;
+  text-decoration: none;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+}
+.chat-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+.chat-info-first-line {
+  display: flex;
+  justify-content: space-between;
+}
+.chat-name {
+  color: #212529;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+.chat-time {
+  color: #6c757d;
+  margin-bottom: 0;
+  font-size: 0.875em;
+}
+.chat-message {
+  color: #6c757d;
+  font-size: 0.875em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.chat:not(div):hover {
+  background: #4545A5;
+  transition: all 0.3s ease-out;
+  color: #f8f9fa;
+}
+.chat:not(div):hover .chat-name,
+.chat:not(div):hover .chat-time,
+.chat:not(div):hover .chat-message {
+  color: #f8f9fa;
+}

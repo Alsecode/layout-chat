@@ -38,11 +38,11 @@
   }
 
 
-.tab(id="contacts")
-  form.form-search.sticky-top.pt-5.px-4.bg-light
-    label.form-label.d-none(for="search")
+.h-100.hide-scrollbar.tab-pane.fade.show.active(id="contacts" role="tabpanel" aria-labelledby="contacts-tab")
+  form.form-search.pt-5.px-4.bg-light
+    label.form-label.d-none(for="search-contacts")
     h2.fw-bold.mb-4 Контакты
-    input(type="text", placeholder="Поиск по контактам", id="search").form-control.p-4.shadow-none.border-0.border-bottom.bg-light
+    input(type="text", placeholder="Поиск по контактам", id="search-contacts").form-control.p-4.shadow-none.border-0.border-bottom.bg-light
   .px-4
     each people, letter in contacts
         p.text-muted.mt-5.mb-3= letter
