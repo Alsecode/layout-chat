@@ -1,0 +1,17 @@
+.border-radius-md {
+  border-radius: 1rem;
+}
+
+.small-text {
+  font-size: $small-font-size;
+}
+
+.hide-scrollbar {
+  @include hide-scrollbar;
+}
+
+@media (max-width: 768px) {
+  .border-radius-md {
+    border-radius: 0rem;
+  }
+}

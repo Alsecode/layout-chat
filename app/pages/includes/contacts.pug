@@ -1,0 +1,54 @@
+-
+  var contacts = {
+    "A": [{
+      name: "Алексей Примадонин",
+      status: "Онлайн",
+      avatar: "../app/images/avatar_3.jpg"
+    }],
+
+    "В": [{
+      name: "Вениамин Редакторович",
+      status: "Онлайн",
+      avatar: "../app/images/avatar_4.jpg"
+    }],
+
+    "Д": [{
+      name: "Джедай Падаванов",
+      status: "Был онлайн вчера",
+      avatar: "../app/images/avatar_2.jpg"
+    }],
+
+    "К": [{
+      name: "Кодовёнок Хекслетович",
+      status: "Был онлайн 3 часа назад",
+      avatar: "../app/images/avatar_1.jpg"
+    },
+    {
+      name: "Королева Верстальщина",
+      status: "Была онлайн вчера",
+      avatar: "../app/images/avatar_5.jpg"
+    }],
+
+    "П": [{
+      name: "Питонист Джангович",
+      status: "Был онлайн вчера",
+      avatar: "../app/images/avatar_6.jpg"
+    }],
+
+  }
+
+
+.tab(id="contacts")
+  form.form-search.sticky-top.pt-5.px-4.bg-light
+    label.form-label.d-none(for="search")
+    h2.fw-bold.mb-4 Контакты
+    input(type="text", placeholder="Поиск по контактам", id="search").form-control.p-4.shadow-none.border-0.border-bottom.bg-light
+  .px-4
+    each people, letter in contacts
+        p.text-muted.mt-5.mb-3= letter
+        each user in people
+          a.contact(href).mb-3 
+            img.avatar(src=user.avatar, alt="Аватар")
+            .contact-info
+              p.contact-name= user.name
+              p.contact-status= user.status

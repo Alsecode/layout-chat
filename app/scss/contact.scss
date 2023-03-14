@@ -1,0 +1,43 @@
+.contact {
+  display: flex;
+  gap: 1.5rem;
+
+  text-decoration: none;
+
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+
+  padding: map.get($spacers, 3) map.get($spacers, 4);
+
+  margin-bottom: map.get($spacers, 3);
+
+  &-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &-name {
+    color: $dark;
+    margin-bottom: map.get($spacers, 0);
+    font-weight: $font-weight-bold;
+  }
+
+  &-status {
+    color: $secondary;
+    margin-bottom: map.get($spacers, 0);
+    font-size: $small-font-size;
+  }
+
+  &:not(div):hover {
+
+    background: map.get($theme-colors, "primary");
+    transition: all 0.3s ease-out;
+    color: $light;
+
+    .contact-name,
+    .contact-status {
+      color: $light;
+    }
+  }
+
+}
