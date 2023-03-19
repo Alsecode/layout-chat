@@ -23,10 +23,10 @@
   ]
 
 .h-100.hide-scrollbar.tab-pane.fade(id="chats" role="tabpanel" aria-labelledby="chats-tab")
-  form.form-search.pt-5.px-4.bg-light
+  form.form-search.pt-5.px-4
     label.form-label.d-none(for="search-chats")
     h2.fw-bold.mb-4 Чаты
-    input(type="text", placeholder="Поиск по сообщениям", id="search-chats").form-control.p-4.shadow-none.border-0.border-bottom.bg-light
+    input(type="text", placeholder="Поиск по сообщениям", id="search-chats").form-control.p-4.shadow-none.border-0.border-bottom
   .px-4.mt-5
     each chat in chats
       a.chat(href).mb-3 

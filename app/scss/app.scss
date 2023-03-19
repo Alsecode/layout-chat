@@ -7,7 +7,7 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
 @import "mixins.scss";
 @import "general.scss";
-@import "avatar.scss";
-@import "contact.scss";
-@import "greeting.scss";
-@import "chats.scss";
+@import "./components/avatar.scss";
+@import "./components/contact.scss";
+@import "./components/greeting.scss";
+@import "./components/chats.scss";
