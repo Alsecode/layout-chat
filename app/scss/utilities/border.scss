@@ -1,0 +1,23 @@
+$utilities: map-merge($utilities,
+    ("border": (property: border,
+        responsive: true,
+        values: (null: $border-width solid $border-color,
+          0: 0,
+        ),
+      ),
+
+      "border-top": (property: border-top,
+        responsive: true,
+        values: (null: $border-width solid $border-color,
+          0: 0,
+        ),
+      ),
+
+      "border-bottom": (property: border-bottom,
+        responsive: true,
+        values: (null: $border-width solid $border-color,
+          0: 0,
+        ),
+      ),
+    ),
+  );
