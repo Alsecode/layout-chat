@@ -10,6 +10,8 @@
 
   margin-bottom: map.get($spacers, 3);
 
+  background-color: $white;
+
   &-info {
     display: flex;
     flex-direction: column;
@@ -28,8 +30,7 @@
     font-size: $small-font-size;
   }
 
-  &:not(div):hover {
-
+  &:hover {
     background: map.get($theme-colors, "primary");
     transition: all 0.3s ease-out;
     color: $light;
