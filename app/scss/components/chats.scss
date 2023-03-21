@@ -1,22 +1,16 @@
 .chat {
   display: flex;
   gap: 1.5rem;
-
   text-decoration: none;
-
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-
+  box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 7.5%);
   padding: map.get($spacers, 3) map.get($spacers, 4);
-
   margin-bottom: map.get($spacers, 3);
 
   &-info {
     width: 100%;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     overflow: hidden;
 
     &-first-line {
@@ -32,7 +26,7 @@
   }
 
   &-time {
-    color: #ADB5BD;
+    color: #adb5bd;
     margin-bottom: map.get($spacers, 0);
     font-size: $small-font-size;
   }
@@ -46,7 +40,6 @@
   }
 
   &:not(div):hover {
-
     background: map.get($theme-colors, "primary");
     transition: all 0.3s ease-out;
     color: $light;
@@ -57,5 +50,4 @@
       color: $light;
     }
   }
-
 }

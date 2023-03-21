@@ -1,0 +1,35 @@
+nav.navbar.navbar-expand.bg-primary.order-last.order-md-first.d-flex.justify-content-between.px-3.py-3.flex-nowrap
+  a(href)
+    img(src='images/icons/logo.svg' height='40px' alt='Лого')
+  ul.navbar-nav.d-flex.gap-sm-3.gap-4.nav.align-items-center.flex-nowrap(id='tab' role='tablist')
+
+    if page === 'index'
+      li(role='presentation')
+        a.d-flex.gap-2.p-0.px-2.active.text-decoration-none(id='contacts-tab' href='#contacts' data-bs-toggle='tab' data-bs-target='#contacts' type='button' role='tab' aria-controls='contacts' aria-selected='true')
+          img(src='images/icons/people.svg' width='25px' alt='Иконка Контакты')
+          p.text-light.my-0.d-none.d-sm-block Контакты
+      li(role='presentation') 
+        a.d-flex.gap-2.p-0.px-2.text-decoration-none(id='chats-tab' href='#chats' data-bs-toggle='tab' data-bs-target='#chats' type='button' role='tab' aria-controls='chats' aria-selected='false')
+          img(src='images/icons/chat.svg' width='25px' alt='Иконка Сообщения')
+          p.text-light.my-0.d-none.d-sm-block Сообщения
+    else
+      li(role='presentation') 
+        a.d-flex.gap-2.p-0.px-2.text-decoration-none.d-lg-none(id='current-chat-tab' href='#current-chat' data-bs-toggle='tab' data-bs-target='#current-chat' type='button' role='tab' aria-controls='current-chat' aria-selected='false')
+          img(src='images/icons/messages.svg' width='25px' alt='Иконка Чат')
+          p.text-light.my-0.d-none.d-sm-block Чат
+      li(role='presentation') 
+        a.d-flex.gap-2.p-0.px-2.text-decoration-none(id='contacts-tab' href='#contacts' data-bs-toggle='tab' data-bs-target='#contacts' type='button' role='tab' aria-controls='contacts' aria-selected='false')
+          img(src='images/icons/people.svg' width='25px' alt='Иконка Контакты')
+          p.text-light.my-0.d-none.d-sm-block Контакты
+      li(role='presentation') 
+        a.d-flex.gap-2.p-0.px-2.active.text-decoration-none(id='chats-tab' href='#chats' data-bs-toggle='tab' data-bs-target='#chats' type='button' role='tab' aria-controls='chats' aria-selected='true')
+          img(src='images/icons/chat.svg' width='25px' alt='Иконка Сообщения')
+          p.text-light.my-0.d-none.d-sm-block Сообщения
+
+    li(role='presentation')
+      a.d-flex.gap-2.p-0.px-2.text-decoration-none(id='profile-tab' href='#profile' data-bs-toggle='tab' data-bs-target='#profile' type='button' role='tab' aria-controls='profile' aria-selected='false')
+        img(src='images/icons/person.svg' width='18.75px' alt='Иконка Профиль')
+        p.text-light.my-0.d-none.d-sm-block Профиль
+
+
+

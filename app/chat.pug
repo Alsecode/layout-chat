@@ -1,4 +1,4 @@
--let page = 'index'
+- let page = 'chat'
 
 doctype html
 html.h-100
@@ -6,19 +6,21 @@ html.h-100
     meta(charset='UTF-8')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
 
-    title Main
+    title Chat
 
-    link(rel='stylesheet' href='./styles/app.css')
+    link(rel='stylesheet' href='styles/app.css')
 
   body.bg-gray.vh-100.p-md-4
     .container-xxxl.bg-white.h-100.radius-md.overflow-hidden
       .row.h-100
         .d-flex.flex-column.col-xxl-4.col-xl-5.col-lg-6.col-12.h-100.px-0
           include includes/header.pug
-          .h-100.overflow-hidden.tab-content(id="tabContent")
+          .h-100.overflow-hidden.tab-content(id='tabContent')
             include includes/contacts.pug
             include includes/chats.pug
             include includes/profile.pug
-        .col.h-100.px-0.d-flex.justify-content-center.align-items-center
-          include includes/greetings.pug
-  script(src="../node_modules/bootstrap/dist/js/bootstrap.min.js")
+            .h-100.hide-scrollbar.tab-pane.fade.d-block.d-lg-none(id='current-chat' role='tabpanel' aria-labelledby='current-chat-tab')
+              include includes/dialog.pug
+        .col.h-100.px-0.d-flex.flex-column.overflow-hidden
+          include includes/dialog.pug
+  script(src='js/bootstrap.min.js')

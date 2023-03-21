@@ -1,0 +1,12 @@
+-
+  var user = {
+      name: 'Вениамин Редакторович',
+      status: 'Онлайн',
+      avatar: 'images/avatar_4.jpg',
+  }
+
+a.contact.shadow-none.border-bottom.mb-0.sticky-top
+  img.avatar(src=user.avatar alt='Аватар')
+  .contact-info
+    p.contact-name= user.name
+    p.contact-status= user.status

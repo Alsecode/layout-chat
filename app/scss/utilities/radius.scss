@@ -1,30 +1,37 @@
-$utilities: map-merge($utilities,
-    ("radius": (property: border-radius,
-        responsive: true,
-        class: radius,
-        values: (null: 1rem,
-        ),
-      ),
-
-      "radius-left-top": (property: border-top-left-radius,
-        responsive: true,
-        class: radius-left-top,
-        values: (null: 1rem,
-        ),
-      ),
-
-      "radius-left": (property: border-top-left-radius border-bottom-left-radius,
-        responsive: true,
-        class: radius-left,
-        values: (null: 1rem,
-        ),
-      ),
-
-      "radius-right": (property: border-top-right-radius border-bottom-right-radius,
-        responsive: true,
-        class: radius-right,
-        values: (null: 1rem,
-        ),
+$utilities: map.merge(
+  $utilities,
+  (
+    "radius": (
+      property: border-radius,
+      responsive: true,
+      class: radius,
+      values: (
+        null: 1rem,
       ),
     ),
-  );
+    "radius-left-top": (
+      property: border-top-left-radius,
+      responsive: true,
+      class: radius-left-top,
+      values: (
+        null: 1rem,
+      ),
+    ),
+    "radius-left": (
+      property: border-top-left-radius border-bottom-left-radius,
+      responsive: true,
+      class: radius-left,
+      values: (
+        null: 1rem,
+      ),
+    ),
+    "radius-right": (
+      property: border-top-right-radius border-bottom-right-radius,
+      responsive: true,
+      class: radius-right,
+      values: (
+        null: 1rem,
+      ),
+    ),
+  )
+);

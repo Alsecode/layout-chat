@@ -1,15 +1,10 @@
 .contact {
   display: flex;
   gap: 1.5rem;
-
   text-decoration: none;
-
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-
+  box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 7.5%);
   padding: map.get($spacers, 3);
-
   margin-bottom: map.get($spacers, 3);
-
   background-color: $white;
 
   &-info {
@@ -40,5 +35,4 @@
       color: $light;
     }
   }
-
 }
